@@ -2,7 +2,12 @@ import React from 'react';
 
 const Profile = () => {
     let name;
-    return <h1>Welcome to your profile, {name}.</h1>;
+    return (
+        <div>
+            <h1>Welcome to your profile.</h1>
+            <p>You are signed in as {name}</p>
+        </div>
+    );
 };
 
 export default Profile;

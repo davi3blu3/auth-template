@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from '@reach/router';
 
 const Login = () => {
     return (
@@ -17,6 +18,12 @@ const Login = () => {
                 <button>Log In</button>
             </div>
             </form>
+            <div>
+                <Link to="../../auth/register">I don't have an account yet</Link>
+            </div>
+            <div>
+                <Link to="../../auth/forgot">I forgot my password</Link>
+            </div>
         </React.Fragment>
     );
 };
